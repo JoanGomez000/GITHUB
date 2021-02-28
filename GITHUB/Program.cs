@@ -207,6 +207,39 @@ namespace GITHUB
             ABCD = char.Parse(Console.ReadLine());
 
 
+            if (ABCD == 'B')
+            {
+                Console.WriteLine("|* ");
+                Console.WriteLine("|* ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.WriteLine("|*                          PREGUNTA ACERTADA!                                    ");
+                Console.WriteLine("|********************************************************************************|");
+                acert++;
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine("|* ");
+                Console.WriteLine("|* ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.WriteLine("|*                          PREGUNTA INCORRECTE!                                    ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.ReadKey();
+            }
+            Console.Clear();
+
+            if (acert > 3 || acert == 3)
+            {
+                Console.WriteLine("|********************************************************************************|");
+                Console.WriteLine("|*                          HAS APROVAT!                                   ");
+                Console.WriteLine("|********************************************************************************|");
+            }
+            else
+            {
+                Console.WriteLine("|********************************************************************************|");
+                Console.WriteLine("|*                          HAS SUSPÉS!                                   ");
+                Console.WriteLine("|********************************************************************************|");
+            }
         }
 
     }
