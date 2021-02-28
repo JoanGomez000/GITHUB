@@ -11,22 +11,25 @@ namespace GITHUB
         static void Main(string[] args)
         {
             char continuar_programa = 'S';
+            //Búcle per obrir i tencar programa
             do
             {
-                Console.WriteLine("|**********************************|");
-                Console.WriteLine("|*                                *|");
-                Console.WriteLine("|*  1 - Exàmen de conduir:        *|");
-                Console.WriteLine("|*  2 - Exàmen de matemàtiques:   *|");
-                Console.WriteLine("|*  3 - Exàmen de programació:    *|");
-                Console.WriteLine("|*                                *|");
-                Console.WriteLine("|**********************************|");
+                //Mostrar menú per opció a triar
+                Console.WriteLine("|************************************|");
+                Console.WriteLine("|*                                  *|");
+                Console.WriteLine("|*  1 - Exàmen de conduir:          *|");
+                Console.WriteLine("|*  2 - Exàmen de programació:      *|");
+                Console.WriteLine("|*  3 - Exàmen de base de dades:    *|");
+                Console.WriteLine("|*                                  *|");
+                Console.WriteLine("|************************************|");
 
                 char opcio_triar = char.Parse(Console.ReadLine());
-
+                //Switch per obrir els métodes i començar amb les preguntes
                 switch (opcio_triar)
                 {
                     case '1':
                         {
+                            //Natejem pantalla i obrim mètode, per sortir tornem a presionar una tecla
                             Console.Clear();
                             PreguntaConduir1();
                             Console.ReadKey();
@@ -34,6 +37,7 @@ namespace GITHUB
                         break;
                     case '2':
                         {
+                            //Natejem pantalla i obrim mètode, per sortir tornem a presionar una tecla
                             Console.Clear();
                             PreguntaProgramacio();
                             Console.ReadKey();
@@ -41,21 +45,27 @@ namespace GITHUB
                         break;
                     case '3':
                         {
+                            //Natejem pantalla i obrim mètode, per sortir tornem a presionar una tecla
                             Console.Clear();
                             PreguntaBaseDeDades();
                             Console.ReadKey();
                         }
                         break;
                 }
-
+                //Natejem pantalla
                 Console.Clear();
+                //Ens demana si volem continuar
                 Console.WriteLine("\n|*  Vols continuar? S/N");
                 continuar_programa = char.Parse(Console.ReadLine());
+                //natejem pantalla
                 Console.Clear();
-            } while (continuar_programa != 'N');
+            } while (continuar_programa != 'N'); //S'executarà sempre que el char sigui diferent de N
         }
+        //PRIMER METODE PER LES PREGUNTES DE EXÀMEN DE CONDUIR
         static void PreguntaConduir1()
         {
+            //Mostrem per pantalla la pregunta + respostes
+            
             Console.WriteLine("\n\n|*  La influencia del factor de riesgo vía, como se puede disminuir?\n\n");
             Console.WriteLine("|*          A - Circulando de noche porque hay menos tráfico:");
             Console.WriteLine("|*          B - Adecuando la velocidad y aumentando la distancia de seguridad:");
@@ -63,10 +73,12 @@ namespace GITHUB
             Console.WriteLine("|*          D - Sin hacer nada:");
             Console.WriteLine("|* ");
             Console.WriteLine("|********************************************************************************|");
-
+           
+            //Demanem a triar una opció
             Console.Write("|*   Tria una opció: ");
             char ABCD = char.Parse(Console.ReadLine());
-
+            
+            //Depenen de la resposta sortira acertada o no
             int acert = 0;
             if (ABCD == 'B')
             {
@@ -89,10 +101,8 @@ namespace GITHUB
             }
             Console.Clear();
 
-
-
-
-
+            //Mostrem per pantalla la pregunta + respostes
+            
             Console.WriteLine("\n\n|*  En una calzada con los dos sentidos separados por una línea continua, esta permitido girar a la izquierda?\n\n");
             Console.WriteLine("|*          A - Sí, cuando no se comprometa la seguridad de ningún usuario de la vía.");
             Console.WriteLine("|*          B - No.");
@@ -100,11 +110,13 @@ namespace GITHUB
             Console.WriteLine("|*          D - Solo fuera de poblado");
             Console.WriteLine("|* ");
             Console.WriteLine("|********************************************************************************|");
-
+           
+            //Demanem a triar una opció
+          
             Console.Write("|*   Tria una opció: ");
             ABCD = char.Parse(Console.ReadLine());
 
-
+            //Depenen de la resposta sortira acertada o no
             if (ABCD == 'B')
             {
                 Console.WriteLine("|* ");
@@ -128,7 +140,8 @@ namespace GITHUB
 
 
 
-
+            //Mostrem per pantalla la pregunta + respostes
+            
             Console.WriteLine("\n\n|*  Quien tiene la responsabilidad por las infracciones cometidas sobre las normas de circulacion?\n\n");
             Console.WriteLine("|*          A - El conductor y si es menor de edad, sus padres o tutores legales.");
             Console.WriteLine("|*          B - Siempre el conductor causante de la infracción cometida.");
@@ -136,11 +149,13 @@ namespace GITHUB
             Console.WriteLine("|*          D - Tus padres");
             Console.WriteLine("|* ");
             Console.WriteLine("|********************************************************************************|");
-
+            
+            //Demanem a triar una opció
             Console.Write("|*   Tria una opció: ");
             ABCD = char.Parse(Console.ReadLine());
 
-
+         
+            //Depenen de la resposta sortira acertada o no
             if (ABCD == 'A')
             {
                 Console.WriteLine("|* ");
@@ -162,6 +177,8 @@ namespace GITHUB
             }
             Console.Clear();
 
+            //Mostrem per pantalla la pregunta + respostes
+            
             Console.WriteLine("\n\n|*  En que situación suelen tener menos accidentes las personas mayores como peatones?\n\n");
             Console.WriteLine("|*          A - Cuando van acompañadas de otra persona mayor");
             Console.WriteLine("|*          B - Cuando van acompañando a niños");
@@ -169,10 +186,13 @@ namespace GITHUB
             Console.WriteLine("|*          D - Cuando van hablando con otra persona");
             Console.WriteLine("|* ");
             Console.WriteLine("|********************************************************************************|");
-
+            
+            //Demanem a triar una opció
+            
             Console.Write("|*   Tria una opció: ");
             ABCD = char.Parse(Console.ReadLine());
-
+          
+            //Depenen de la resposta sortira acertada o no
             if (ABCD == 'B')
             {
                 Console.WriteLine("|* ");
@@ -194,7 +214,8 @@ namespace GITHUB
             }
             Console.Clear();
 
-
+            //Mostrem per pantalla la pregunta + respostes
+          
             Console.WriteLine("\n\n|*  Que función tiene la carrocería como elemento de seguridad pasiva?\n\n");
             Console.WriteLine("|*          A - Absorber la deceleración de las frenadas");
             Console.WriteLine("|*          B - Proteger a los ocupantes del vehiculo en caso de accidente");
@@ -202,11 +223,13 @@ namespace GITHUB
             Console.WriteLine("|*          D - Aumentar la aerodinámica del vehiculo.");
             Console.WriteLine("|* ");
             Console.WriteLine("|********************************************************************************|");
-
+           
+            //Demanem a triar una opció
             Console.Write("|*   Tria una opció: ");
             ABCD = char.Parse(Console.ReadLine());
 
-
+           
+            //Depenen de la resposta sortira acertada o no
             if (ABCD == 'B')
             {
                 Console.WriteLine("|* ");
@@ -228,7 +251,8 @@ namespace GITHUB
             }
             Console.Clear();
 
-            if (acert > 3 || acert == 3)
+            //Depenent de quants accerts hagim fet s'executarà
+            if (acert > 3 || acert == 3) //Si hem fet 3 acerts o més haurem aprovat el examen
             {
                 Console.WriteLine("|********************************************************************************|");
                 Console.WriteLine("|*                          HAS APROVAT!                                   ");
@@ -241,6 +265,7 @@ namespace GITHUB
                 Console.WriteLine("|********************************************************************************|");
             }
         }
+        //A partir d'ara els mètodes son el mateix peró amb les preguntes canviades
         static void PreguntaProgramacio()
         {
             Console.WriteLine("\n\n|*  ¿Cuál es la descripción que crees que define mejor el concepto 'clase' en la programación orientada a objetos?\n\n");
