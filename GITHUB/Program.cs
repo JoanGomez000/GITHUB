@@ -162,6 +162,51 @@ namespace GITHUB
             }
             Console.Clear();
 
+            Console.WriteLine("\n\n|*  En que situación suelen tener menos accidentes las personas mayores como peatones?\n\n");
+            Console.WriteLine("|*          A - Cuando van acompañadas de otra persona mayor");
+            Console.WriteLine("|*          B - Cuando van acompañando a niños");
+            Console.WriteLine("|*          C - Cuando van solas");
+            Console.WriteLine("|*          D - Cuando van hablando con otra persona");
+            Console.WriteLine("|* ");
+            Console.WriteLine("|********************************************************************************|");
+
+            Console.Write("|*   Tria una opció: ");
+            ABCD = char.Parse(Console.ReadLine());
+
+            if (ABCD == 'B')
+            {
+                Console.WriteLine("|* ");
+                Console.WriteLine("|* ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.WriteLine("|*                          PREGUNTA ACERTADA!                                    ");
+                Console.WriteLine("|********************************************************************************|");
+                acert++;
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine("|* ");
+                Console.WriteLine("|* ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.WriteLine("|*                          PREGUNTA INCORRECTE!                                    ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.ReadKey();
+            }
+            Console.Clear();
+
+
+            Console.WriteLine("\n\n|*  Que función tiene la carrocería como elemento de seguridad pasiva?\n\n");
+            Console.WriteLine("|*          A - Absorber la deceleración de las frenadas");
+            Console.WriteLine("|*          B - Proteger a los ocupantes del vehiculo en caso de accidente");
+            Console.WriteLine("|*          C - Evitar que se produzcan accidentes graves");
+            Console.WriteLine("|*          D - Aumentar la aerodinámica del vehiculo.");
+            Console.WriteLine("|* ");
+            Console.WriteLine("|********************************************************************************|");
+
+            Console.Write("|*   Tria una opció: ");
+            ABCD = char.Parse(Console.ReadLine());
+
+
         }
 
     }
