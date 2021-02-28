@@ -88,7 +88,147 @@ namespace GITHUB
                 Console.ReadKey();
             }
             Console.Clear();
-        }   
+
+
+            Console.WriteLine("\n\n|*  El comando ___________ es usado para obtener información acerca de como MySQL podría ejecutar una consulta.\n\n");
+            Console.WriteLine("|*          A - ANALIZE");
+            Console.WriteLine("|*          B - DESCRIBE");
+            Console.WriteLine("|*          C - EXPLAIN");
+            Console.WriteLine("|*          D - SHOW");
+            Console.WriteLine("|* ");
+            Console.WriteLine("|********************************************************************************|");
+
+            Console.Write("|*   Tria una opció: ");
+            ABCD = char.Parse(Console.ReadLine());
+
+
+            if (ABCD == 'C')
+            {
+                Console.WriteLine("|* ");
+                Console.WriteLine("|* ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.WriteLine("|*                          PREGUNTA ACERTADA!                                    ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.ReadKey();
+                acert++;
+            }
+            else
+            {
+                Console.WriteLine("|* ");
+                Console.WriteLine("|* ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.WriteLine("|*                          PREGUNTA INCORRECTE!                                    ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.ReadKey();
+            }
+            Console.Clear();
+
+
+
+
+            Console.WriteLine("\n\n|*  ¿Qué sentencia es valida en MySQL?\n\n");
+            Console.WriteLine("|*          A - RENAME TABLE");
+            Console.WriteLine("|*          B - RENAME DATABASE");
+            Console.WriteLine("|*          C - RENAME INDEX");
+            Console.WriteLine("|*          D - RENAME TRIGGER");
+            Console.WriteLine("|* ");
+            Console.WriteLine("|********************************************************************************|");
+
+            Console.Write("|*   Tria una opció: ");
+            ABCD = char.Parse(Console.ReadLine());
+
+
+            if (ABCD == 'A')
+            {
+                Console.WriteLine("|* ");
+                Console.WriteLine("|* ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.WriteLine("|*                          PREGUNTA ACERTADA!                                    ");
+                Console.WriteLine("|********************************************************************************|");
+                acert++;
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine("|* ");
+                Console.WriteLine("|* ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.WriteLine("|*                          PREGUNTA INCORRECTE!                                    ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.ReadKey();
+            }
+            Console.Clear();
+
+
+
+
+            Console.WriteLine("\n\n|*  ¿Cuál es la estructura que se usa para leer la fila de un cursor?\n\n");
+            Console.WriteLine("|*          A - INTO <nombre_cursor> INTO <lista_variables>");
+            Console.WriteLine("|*          B - FITCH <nombre_cursor> INTRO <lista_variables>");
+            Console.WriteLine("|*          C - FETCH <nombre_cursor> INTO <lista_variables>");
+            Console.WriteLine("|*          D - INTO <nombre_cursor> FETCH <lista_variables>");
+            Console.WriteLine("|* ");
+            Console.WriteLine("|********************************************************************************|");
+
+            Console.Write("|*   Tria una opció: ");
+            ABCD = char.Parse(Console.ReadLine());
+
+            if (ABCD == 'C')
+            {
+                Console.WriteLine("|* ");
+                Console.WriteLine("|* ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.WriteLine("|*                          PREGUNTA ACERTADA!                                    ");
+                Console.WriteLine("|********************************************************************************|");
+                acert++;
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine("|* ");
+                Console.WriteLine("|* ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.WriteLine("|*                          PREGUNTA INCORRECTE!                                    ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.ReadKey();
+            }
+            Console.Clear();
+
+
+            Console.WriteLine("\n\n|*  Elija la respuesta correcta: ¿Cómo se declara una variable para un cursor?\n\n");
+            Console.WriteLine("|*          A - -Nombre");
+            Console.WriteLine("|*          B - $Nombre");
+            Console.WriteLine("|*          C - @Nombre");
+            Console.WriteLine("|*          D - %Nombre");
+            Console.WriteLine("|* ");
+            Console.WriteLine("|********************************************************************************|");
+
+            Console.Write("|*   Tria una opció: ");
+            ABCD = char.Parse(Console.ReadLine());
+
+
+            if (ABCD == 'D')
+            {
+                Console.WriteLine("|* ");
+                Console.WriteLine("|* ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.WriteLine("|*                          PREGUNTA ACERTADA!                                    ");
+                Console.WriteLine("|********************************************************************************|");
+                acert++;
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine("|* ");
+                Console.WriteLine("|* ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.WriteLine("|*                          PREGUNTA INCORRECTE!                                    ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.ReadKey();
+            }
+            Console.Clear();
+
+        }
 
 
     }
