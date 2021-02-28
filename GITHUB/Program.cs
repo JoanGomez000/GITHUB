@@ -54,5 +54,42 @@ namespace GITHUB
                 Console.Clear();
             } while (continuar_programa != 'N');
         }
+        static void PreguntaBaseDeDades()
+        {
+            Console.WriteLine("\n\n|*  Sentencia utilizada para eliminar una base de datos\n\n");
+            Console.WriteLine("|*          A - DELETE DATABASE");
+            Console.WriteLine("|*          B - DROP DATABASE");
+            Console.WriteLine("|*          C - ERASE DATABASE");
+            Console.WriteLine("|*          D - TRUNCATE DATABASE");
+            Console.WriteLine("|* ");
+            Console.WriteLine("|********************************************************************************|");
+
+            Console.Write("|*   Tria una opció: ");
+            char ABCD = char.Parse(Console.ReadLine());
+
+            int acert = 0;
+            if (ABCD == 'B')
+            {
+                Console.WriteLine("|* ");
+                Console.WriteLine("|* ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.WriteLine("|*                          PREGUNTA ACERTADA!                                    ");
+                Console.WriteLine("|********************************************************************************|");
+                acert++;
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine("|* ");
+                Console.WriteLine("|* ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.WriteLine("|*                          PREGUNTA INCORRECTE!                                    ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.ReadKey();
+            }
+            Console.Clear();
+        }   
+
+
     }
 }
