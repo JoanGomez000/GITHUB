@@ -54,5 +54,40 @@ namespace GITHUB
                 Console.Clear();
             } while (continuar_programa != 'N');
         }
+        static void PreguntaProgramacio()
+        {
+            Console.WriteLine("\n\n|*  ¿Cuál es la descripción que crees que define mejor el concepto 'clase' en la programación orientada a objetos?\n\n");
+            Console.WriteLine("|*          A - Es un concepto similar al de 'array'");
+            Console.WriteLine("|*          B - Es un tipo particular de variable");
+            Console.WriteLine("|*          C - Es un modelo o plantilla a partir de la cual creamos objetos");
+            Console.WriteLine("|*          D - Es una categoria de datos ordenada secuencialmente");
+            Console.WriteLine("|* ");
+            Console.WriteLine("|********************************************************************************|");
+
+            Console.Write("|*   Tria una opció: ");
+            char ABCD = char.Parse(Console.ReadLine());
+
+            int acert = 0;
+            if (ABCD == 'C')
+            {
+                Console.WriteLine("|* ");
+                Console.WriteLine("|* ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.WriteLine("|*                          PREGUNTA ACERTADA!                                    ");
+                Console.WriteLine("|********************************************************************************|");
+                acert++;
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine("|* ");
+                Console.WriteLine("|* ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.WriteLine("|*                          PREGUNTA INCORRECTE!                                    ");
+                Console.WriteLine("|********************************************************************************|");
+                Console.ReadKey();
+            }
+            Console.Clear();
+        }
     }
 }
